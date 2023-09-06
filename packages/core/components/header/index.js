@@ -6,20 +6,23 @@ import { useEffect, useState } from "react";
 import { Menu, MenuItem, MenuButton } from '@szhsin/react-menu';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown, faCaretDown, faHouse } from '@fortawesome/free-solid-svg-icons';
-import { useNavigate } from "react-router-dom";
 import { Routes, Route, Outlet, NavLink, BrowserRouter } from "react-router-dom";
+import useNavigation from "../../hooks/useNavigation";
 
 const headerCss = css`
-height: 120px;
-max-height: 140px;
+height: 80px;
+max-height: 80px;
 // .header_logo-group-logo.l-breakpoint--desktop span{
 //   --icon-size:7rem !important;
 // }
-.header_logo-group-logo.l-breakpoint--tablet span{
+.header_logo-group-logo.l-breakpoint--tablet .j-icon{
   --icon-size:4rem !important;
 }
 .header_logo-group-logo span img{
   border-radius: 100%;
+}
+.header_logo-group-logo.l-breakpoint--desktop .j-icon{
+  --icon-size: 3.5rem !important;
 }
 .header_spacer{
   display: none;
@@ -51,11 +54,17 @@ const subNavCss = css`
   border-radius: 0;
 }
 `
+
+const logo = css`
+.j-icon{
+
+}
+`
 const AppHeader = (props) => {
   const { headerConfig } = props;
   const breakpoints = Devices.useMedia();
   const [activeLink, setActiveLink] = useState();
-  const navigate = useNavigate();
+  const {navigate} = useNavigation();
   const [menuLinks, setMenuLinks] = useState();
   const [activeMenuLink, setActiveMenuLink] = useState("link1");
   const [subLinks, setSubLinks] = useState([]);
@@ -88,13 +97,13 @@ const AppHeader = (props) => {
     <Container as="div">
       <Header
         css={headerCss}
-        logo={<img src="https://storage.googleapis.com/asvnvs/logo.jpeg"></img>}
+        logo={<Icon size="fill" ic={<img src="https://storage.googleapis.com/asvnvs/logo.jpeg"></img>}/>}
         pageTitle={(
           <Container
             as="div"
             layout="centered">
-            {breakpoints?.desktop && <Heading as="div" appearance="heading-xs">ASVNV OLD STUDENTS ASSOCIATION</Heading>}
-            <Heading as="div" appearance={breakpoints?.desktop ? 'heading-xs' : 'heading-xxs'}>ಎ ಎಸ್ ವಿ ಎನ್ ವಿ ಹಿರಿಯ ವಿದ್ಯಾರ್ಥಿಗಳ ಸಂಘ</Heading>
+            {breakpoints?.desktop && <Heading as="div" appearance="heading-s">ASVNVS OLD STUDENTS ASSOCIATION</Heading>}
+            <Heading as="div" appearance={breakpoints?.desktop ? 'heading-s' : 'heading-xxs'}>ಎ ಎಸ್ ವಿ ಎನ್ ವಿ ಎಸ್ ಹಿರಿಯ ವಿದ್ಯಾರ್ಥಿಗಳ ಸಂಘ</Heading>
           </Container>
         )}
         links={
@@ -161,7 +170,7 @@ const AppHeader = (props) => {
               } */}
 
 
-              {
+              {/* {
                 (menuLinks || []).map(({ name, uid }, index) => (
                   <>
                     {
@@ -175,7 +184,7 @@ const AppHeader = (props) => {
                   </>
 
                 ))
-              }
+              } */}
 
             </Container>
             <Container

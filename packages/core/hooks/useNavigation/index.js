@@ -36,13 +36,13 @@ const useNavigation = () => {
     }, [routerNavigate]);
 
 
-    const navigate = useCallback((url) => {
+    const navigate = useCallback((url, newTab) => {        
         const evTarget = url;
         const isTargetAbsoluteURL = commonUtils.isAbsoluteURL(evTarget)
 
         evTarget
             ? isTargetAbsoluteURL
-                ? window.open(evTarget, '_self')
+                ? window.open(evTarget, newTab ? '__blank' : '_self')
                 : routerNavigate(evTarget)
             : null;
     }, [routerNavigate]);
