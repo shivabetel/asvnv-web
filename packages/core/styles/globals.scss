@@ -1,0 +1,45 @@
+/* html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+} */
+
+// @include createDefaultTheme();
+
+@import '~@jds/core/dist/styles/main';
+@import '@szhsin/react-menu/dist/index.css';
+@import '@szhsin/react-menu/dist/transitions/slide.css';
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+@include createDefaultTheme(['purple', 'sky', 'sky']);
+
+
+@include addExtraTheme('sky-red-green', ['sky', 'red', 'green']);
+
+@include addExtraTheme('green-mint-orange', [ 'green', 'mint', 'orange' ]);
+
+@include addExtraTheme('mint-green-orange', [ 'mint', 'green', 'orange' ]);
+
+@include addExtraTheme('mint-sky-marigoldmidnight', [ 'mint', 'sky', 'marigold-midnight' ]);
+
+@include addExtraTheme('orange-purple-sky', ['orange', 'purple', 'sky']);
+
+@include addExtraTheme('pink-violetmidnight-marigoldmidnight', ['pink', 'violet-midnight', 'marigold-midnight']);
+
+@include addExtraTheme('redmidnight-crimsonmidnight-sky', ['red-midnight', 'crimson-midnight', 'sky']);
+
+// @include createDefaultTheme(['reliance', 'green', 'sky']);
+.h-100{
+  height: 100%;
+}

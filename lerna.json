@@ -1,0 +1,10 @@
+{
+  "packages": [
+    "microapps/*",
+    "packages/*"
+  ],
+  "useNx": false,
+  "useWorkSpaces": true,
+  "npmClient": "yarn",
+  "version": "0.0.0"
+}
