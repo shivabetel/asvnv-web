@@ -18,9 +18,9 @@ const AppFooter = ({ sitesHeaderFooterLoaded }) => {
         <Footer
                         sitesHeaderFooterLoaded={sitesHeaderFooterLoaded}
                         logo={<Icon ic={<img alt="logo" src="https://storage.googleapis.com/asvnvs/logo.jpeg"></img>}/>}
-                        // bottomLinks={[...bottomLinks]}
+                        //bottomLinks={[...bottomLinks]}
                         copyright="Copyright © 2023 ASVNV old students association. All rights reserved."
-                        // links={[...footerLinks]}
+                        links={[...footerLinks]}
                         marketplace={{ ...marketplace }}
                         marketplaceLinks={2}
                         social={{ ...socialNetworkLinks }}

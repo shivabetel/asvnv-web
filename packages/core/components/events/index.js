@@ -6,6 +6,10 @@ import { lAlignCenter } from "../../styles";
 import ImageGallery from "react-image-gallery";
 import { useCallback, useEffect, useState } from "react";
 import { IcClose } from "@jds/core-icons";
+import RichText from "@asvnv/core/components/richtext"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInfo, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
+import EventInfoModal from "./modal";
 
 
 
@@ -147,10 +151,11 @@ const Events = ({
     const [showImageGallery, setShowImageGallery] = useState(false);
     const [selectedEventImages, setSelectedEventImages] = useState([]);
     const [eventFilters, setEventFilters] = useState([]);
+    const [selectedEvent, setSelectedEvent] = useState();
 
     useEffect(() => {
         events?.length > 0 && (() => {
-            const filters = (events || []).map(({title}) => ({
+            const filters = (events || []).map(({ title }) => ({
                 label: title,
                 checked: false
             }))
@@ -180,6 +185,18 @@ const Events = ({
     }
 
 
+    const handleEventInfoClick = (event) => {
+        setSelectedEvent(event)
+    }
+
+    const onCloseEventInfoModal = () => {
+        setSelectedEvent(null)
+    }
+
+
+    console.log("setSelectedEvent:",selectedEvent);
+
+
     return (
         <>
             <Container
@@ -190,13 +207,13 @@ const Events = ({
                 <Space className="l-breakpoint--desktop" value='huge' />
                 <Space className="l-breakpoint--tablet" value='xxl' />
                 <Grid template="15% 80%"
-                templateMobile="1fr"
-                templateTablet="1fr"
-                style={{alignItems: 'flex-start'}}>
+                    templateMobile="1fr"
+                    templateTablet="1fr"
+                    style={{ alignItems: 'flex-start' }}>
                     <Container>
 
                         {
-                           breakpoints.desktop && (eventFilters || []).map((filter, index) => (
+                            breakpoints.desktop && (eventFilters || []).map((filter, index) => (
                                 <Container
                                     as="div"
                                     pad="s"
@@ -204,9 +221,9 @@ const Events = ({
                                     <Input
                                         type="checkbox"
                                         name="filter"
-                                        label={<Heading appearance="heading-xxs">{filter?.label}</Heading>} 
+                                        label={<Heading appearance="heading-xxs">{filter?.label}</Heading>}
                                         checked={filter?.checked}
-                                        onChange={(e) => handleEventFilter(e, index)}/>
+                                        onChange={(e) => handleEventFilter(e, index)} />
                                 </Container>
                             ))
                         }
@@ -216,31 +233,50 @@ const Events = ({
                         templateMobile="1fr"
                         templateTablet="repeat(2,1fr)">
                         {
-                            (events || []).map(({ thumbnails, images, title, description }, index) => (
-                                <Container
-                                    key={index}
-                                    className="j-card j-card__shadow no-top-padding"
-                                    layout="flex"
-                                    css={[card, lAlignCenter]}
-                                >
-                                    <EventImages
-                                        thumbnails={thumbnails}
-                                        images={images}
-                                        showFullViewImageGallery={showFullViewImageGallery} />
+                            (events || []).map((event, index) => {
+                                const { thumbnails, images, title, description, shortDescription } = event;
+                                return (
                                     <Container
-                                        as="div"
-                                        pad="s"
-                                        padPosition="horizontal">
+                                        key={index}
+                                        className="j-card j-card__shadow no-top-padding"
+                                        layout="flex"
+                                        css={[card, lAlignCenter]}
+                                    >
+                                        <EventImages
+                                            thumbnails={thumbnails}
+                                            images={images}
+                                            showFullViewImageGallery={showFullViewImageGallery} />
                                         <Container
                                             as="div"
                                             pad="s"
-                                            padPosition="bottom">
-                                            <Heading appearance="heading-xs">{title}</Heading>
+                                            padPosition="horizontal"
+                                            layout="flex"
+                                            style={{ alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
+                                            <div>
+                                                <Container
+                                                    as="div"
+                                                    pad="s"
+                                                    padPosition="bottom"
+                                                    style={{ flex: 1 }}>
+                                                    <Heading appearance="heading-xs">{title}</Heading>
+                                                </Container>
+                                                <Text appearance="body-s">{shortDescription}</Text>
+                                            </div>
+                                            <div>
+                                                <Icon
+                                                    kind="background"
+                                                    size="xl"
+                                                    color="primary"
+                                                    ic={<FontAwesomeIcon
+                                                        icon={faInfoCircle}
+                                                        style={{ cursor: 'pointer' }} />} 
+                                                    onClick={() => handleEventInfoClick(event)}    />
+                                            </div>
                                         </Container>
-                                        <Text appearance="body-s">{description}</Text>
+    
                                     </Container>
-                                </Container>
-                            ))
+                                )
+                            })
                         }
                     </Grid>
                 </Grid>
@@ -253,6 +289,9 @@ const Events = ({
                         }))}
                         toggleShowImageGallery={toggleShowImageGallery} />
                 )
+            }
+            {
+               selectedEvent && <EventInfoModal content={selectedEvent} handleEventClose={onCloseEventInfoModal}/>
             }
         </>
 

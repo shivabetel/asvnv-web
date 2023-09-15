@@ -10,154 +10,23 @@ import { faCalendar, faHandsHelping, faHouse, faInfo, faPerson, faS } from '@for
 
 
 
-// const footerLinks = [
-//     {
-//         subLinks: [
-//             {
-//                 href: 'https://www.jio.com/selfcare/plans/mobility/prepaid-plans-home',
-//                 newTab: true,
-//                 title: 'Prepaid'
-//             },
-//             {
-//                 href: 'https://www.jio.com/selfcare/plans/mobility/postpaid-plans-home',
-//                 newTab: true,
-//                 title: 'Postpaid'
-//             },
-//             {
-//                 href: 'https://www.jio.com/selfcare/plans/mobility/jio-international-roaming-plans',
-//                 newTab: true,
-//                 title: 'International roaming'
-//             },
-//             {
-//                 href: 'https://www.jio.com/en-in/apps',
-//                 newTab: true,
-//                 title: 'Apps'
-//             },
-//             {
-//                 href: 'https://www.jio.com/en-in/esim',
-//                 newTab: true,
-//                 title: 'eSIM'
-//             },
-//             {
-//                 href: 'https://www.jio.com/en-in/jio-wifi-calling',
-//                 newTab: true,
-//                 title: 'Wifi calling'
-//             },
-//             {
-//                 href: 'https://www.jio.com/jio-tunes',
-//                 newTab: true,
-//                 title: 'JioTunes'
-//             },
-//             {
-//                 href: 'https://www.jio.com/shop/en-in/c/jioaccessories',
-//                 newTab: true,
-//                 title: 'Devices'
-//             },
-//             {
-//                 href: 'https://www.mylyf.com/',
-//                 newTab: true,
-//                 title: 'LYF smartphone+'
-//             }
-//         ],
-//         title: 'Our offerings'
-//     },
-//     {
-//         subLinks: [
-//             {
-//                 href: 'https://www.jio.com/en-in/track-order',
-//                 newTab: true,
-//                 title: 'Track order'
-//             },
-//             {
-//                 href: 'https://www.jio.com/dashboard',
-//                 newTab: true,
-//                 title: 'My account'
-//             },
-//             {
-//                 href: 'https://www.jio.com/en-in/help-support/frequently-asked-questions',
-//                 newTab: true,
-//                 title: 'FAQ'
-//             },
-//             {
-//                 href: 'https://www.jio.com/selfcare/locate-us/',
-//                 newTab: true,
-//                 title: 'Locate us'
-//             },
-//             {
-//                 href: 'https://www.jio.com/JioApp/index.html?root=erefund',
-//                 newTab: true,
-//                 title: 'Claim your refund'
-//             },
-//             {
-//                 href: 'https://www.jio.com/en-in/survey/feedback.html',
-//                 newTab: true,
-//                 title: 'Feedback'
-//             },
-//             {
-//                 href: 'https://www.jio.com/en-in/help-support/contact-us',
-//                 newTab: true,
-//                 title: 'Contact us'
-//             }
-//         ],
-//         title: 'Support'
-//     },
-//     {
-//         subLinks: [
-//             {
-//                 href: 'https://www.ril.com',
-//                 newTab: true,
-//                 title: 'Reliance Industries',
-//             },
-//             {
-//                 href: 'https://www.reliancefoundation.org',
-//                 newTab: true,
-//                 title: 'Reliance Foundation',
-//             },
-//             {
-//                 href: 'https://www.jio.com/en-in/jio-life',
-//                 newTab: true,
-//                 title: 'JioLife',
-//             },
-//             {
-//                 href: 'https://careers.jio.com/?_ga=2.75455506.1412552817.1506325533-278711781.1506325533',
-//                 newTab: true,
-//                 title: 'Careers',
-//             },
-//             {
-//                 href: 'https://www.jio.com/sites/Satellite?c=Page&cid=1461130881230&pagename=JIO%2FPage%2FRIL_Revamp%2FTnC%2FMainPage',
-//                 newTab: true,
-//                 title: 'Investor relations',
-//             }
-//         ],
-//         title: 'Our company'
-//     },
-//     {
-//         subLinks: [
-//             {
-//                 href: 'https://www.jio.com/get-jio-sim',
-//                 newTab: true,
-//                 title: 'Get Jio SIM'
-//             },
-//             {
-//                 href: 'https://www.jio.com/selfcare/autopay',
-//                 newTab: true,
-//                 title: 'JioAutoPay'
-//             },
-//             {
-//                 href: 'https://www.jio.com/en-in/brand-partners',
-//                 newTab: true,
-//                 title: 'Brand offers'
-//             },
-//             {
-//                 href: 'https://www.jio.com/partner-with-jio',
-//                 newTab: true,
-//                 title: 'Partner with Jio'
-//             }
-//         ],
-//         title: 'Useful links',
-//         titleEl: '[Circular]'
-//     }
-// ];
+const footerLinks = [
+    {
+        subLinks: [
+            {
+                href: '',
+                newTab: true,
+                title: 'ಮಾತೃ ಸಂಸ್ಥೆ'
+            },
+            {
+                href: '',
+                newTab: true,
+                title: 'ಮನೆ ದೇವಾಲಯಗಳು'
+            }
+        ],
+        title: 'ಸಂಬಂಧಿತ ಲಿಂಕ್‌ಗಳು'
+    }
+];
 
 
 
@@ -249,7 +118,7 @@ const appConfiguration = {
     },
     footer: {
         links: {
-            // footerLinks,
+            footerLinks,
             socialNetworkLinks
         },
         visible: false,
