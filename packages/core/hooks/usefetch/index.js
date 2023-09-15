@@ -6,11 +6,10 @@ import axiosInstance from '@asvnv/api/axiosInstance';
 const getContent = async (url, source, mockData) => {
 
     try {
-        const { data } = 
-        // process.env.REACT_APP_MOCKENABLED ? await Promise.resolve({
-        //     data: mockData,
-        //     status: 200
-        // }) :
+        const { data } = process.env.REACT_APP_MOCKENABLED ? await Promise.resolve({
+            data: mockData,
+            status: 200
+        }) :
             await axiosInstance.cachedGet(url, { cancelToken: source.token })
         return Promise.resolve(data);
     } catch (error) {

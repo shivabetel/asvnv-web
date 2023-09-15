@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-import { Button, Card, Container, Devices, Grid, Heading, Icon, Input, Space, Text } from "@jds/core";
+import { Button, Card, Container, Devices, Grid, Heading, Icon, Input, Space, Text, Divider } from "@jds/core";
 import Image from "../image";
 import { lAlignCenter } from "../../styles";
 import ImageGallery from "react-image-gallery";
@@ -152,6 +152,7 @@ const Events = ({
     const [selectedEventImages, setSelectedEventImages] = useState([]);
     const [eventFilters, setEventFilters] = useState([]);
     const [selectedEvent, setSelectedEvent] = useState();
+    const [allEvents, setAllEvents] = useState(events)
 
     useEffect(() => {
         events?.length > 0 && (() => {
@@ -180,9 +181,19 @@ const Events = ({
             const obj = filters[index]
             obj.checked = e?.target?.checked;
             filters.splice(index, 1, obj);
-            return filters;
+            return filters.map(filter => filter);
         })
     }
+
+    useEffect(() => {
+        if (eventFilters?.filter(filter => filter?.checked).length == 0) {
+            setAllEvents(events)
+        } else {
+            setAllEvents(events.filter(event => eventFilters.some(filter => filter?.checked && filter?.label == event?.title)))
+        }
+
+    }, [eventFilters, events])
+
 
 
     const handleEventInfoClick = (event) => {
@@ -194,9 +205,6 @@ const Events = ({
     }
 
 
-    console.log("setSelectedEvent:",selectedEvent);
-
-
     return (
         <>
             <Container
@@ -204,8 +212,6 @@ const Events = ({
                 pad="l"
                 padPosition="all"
                 as="div">
-                <Space className="l-breakpoint--desktop" value='huge' />
-                <Space className="l-breakpoint--tablet" value='xxl' />
                 <Grid template="15% 80%"
                     templateMobile="1fr"
                     templateTablet="1fr"
@@ -213,19 +219,49 @@ const Events = ({
                     <Container>
 
                         {
-                            breakpoints.desktop && (eventFilters || []).map((filter, index) => (
+                            breakpoints?.desktop && (
+                                <>
+                                    <Container
+                                        as="div"
+                                        pad="s"
+                                        padPosition="bottom"
+                                        layout="centered"
+                                    >
+                                        <Heading as="h5">ಫಿಲ್ಟರ್</Heading>
+                                    </Container>
+                                    <Divider />
+                                </>
+                            )
+                        }
+                        {
+                            breakpoints?.tablet && (
                                 <Container
-                                    as="div"
-                                    pad="s"
-                                    padPosition="vertical">
-                                    <Input
-                                        type="checkbox"
-                                        name="filter"
-                                        label={<Heading appearance="heading-xxs">{filter?.label}</Heading>}
-                                        checked={filter?.checked}
-                                        onChange={(e) => handleEventFilter(e, index)} />
+                                    layout="flex"
+                                    style={{ justifyContent: 'flex-end' }}>
+                                    <Button
+                                        kind="secondary"
+                                        title="Filter"
+                                        icon={<Icon ic={<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 11H7a1 1 0 000 2h10a1 1 0 000-2zm-3 6h-4a1 1 0 000 2h4a1 1 0 000-2zm6-12H4a1 1 0 000 2h16a1 1 0 100-2z" fill="currentColor"></path></svg>} />} />
                                 </Container>
-                            ))
+                            )
+                        }
+                        {
+                            breakpoints.desktop && (eventFilters || []).map((filter, index) => {
+                                return (
+                                    <Container
+                                        as="div"
+                                        pad="xs"
+                                        padPosition="vertical"
+                                    >
+                                        <Input
+                                            type="checkbox"
+                                            name="filter"
+                                            label={<Heading appearance="heading-xxs">{filter?.label}</Heading>}
+                                            checked={filter?.checked}
+                                            onChange={(e) => handleEventFilter(e, index)} />
+                                    </Container>
+                                )
+                            })
                         }
                     </Container>
                     <Grid
@@ -233,9 +269,11 @@ const Events = ({
                         templateMobile="1fr"
                         templateTablet="repeat(2,1fr)">
                         {
-                            (events || []).map((event, index) => {
-                                const { thumbnails, images, title, description, shortDescription } = event;
+
+                            (allEvents || []).map((event, index) => {
+                                const { thumbnails, images, title, shortDescription, description } = event;
                                 return (
+
                                     <Container
                                         key={index}
                                         className="j-card j-card__shadow no-top-padding"
@@ -248,9 +286,9 @@ const Events = ({
                                             showFullViewImageGallery={showFullViewImageGallery} />
                                         <Container
                                             as="div"
+                                            layout="flex"
                                             pad="s"
                                             padPosition="horizontal"
-                                            layout="flex"
                                             style={{ alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
                                             <div>
                                                 <Container
@@ -262,18 +300,21 @@ const Events = ({
                                                 </Container>
                                                 <Text appearance="body-s">{shortDescription}</Text>
                                             </div>
-                                            <div>
-                                                <Icon
-                                                    kind="background"
-                                                    size="xl"
-                                                    color="primary"
-                                                    ic={<FontAwesomeIcon
-                                                        icon={faInfoCircle}
-                                                        style={{ cursor: 'pointer' }} />} 
-                                                    onClick={() => handleEventInfoClick(event)}    />
-                                            </div>
+                                            {
+                                                description && (
+                                                    <div>
+                                                        <Icon
+                                                            kind="background"
+                                                            size="xl"
+                                                            color="primary"
+                                                            ic={<FontAwesomeIcon
+                                                                icon={faInfoCircle}
+                                                                style={{ cursor: 'pointer' }} />}
+                                                            onClick={() => handleEventInfoClick(event)} />
+                                                    </div>
+                                                )
+                                            }
                                         </Container>
-    
                                     </Container>
                                 )
                             })
@@ -291,7 +332,7 @@ const Events = ({
                 )
             }
             {
-               selectedEvent && <EventInfoModal content={selectedEvent} handleEventClose={onCloseEventInfoModal}/>
+                selectedEvent && <EventInfoModal content={selectedEvent} handleEventClose={onCloseEventInfoModal} />
             }
         </>
 

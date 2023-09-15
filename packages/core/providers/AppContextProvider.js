@@ -85,8 +85,8 @@ const headerLinks = [
             },
             {
                 name: 'ದಾನಿಗಳು',
-                href: '/mobile/postpaid',
-                icon: faPerson
+                href: '/donors',
+                icon: faPerson                
 
             },
             {

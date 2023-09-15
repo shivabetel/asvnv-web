@@ -10,7 +10,7 @@
                 {
                     "id": 1,
                     "__component": "blocks.events",
-                    "events": [
+                    "events": [                        
                         {
                             "id": 6,
                             "title": "7ನೇ ಸ್ನೇಹ ಸಮ್ಮಿಲನ",
@@ -711,6 +711,81 @@
                                     "mobile": "asvnvs/2nd-sneha-sammilana/thumbnails/thumbnail_7_37431354ee.jpg",
                                     "alttext": null
                                 }
+                            ]
+                        },
+                        {
+                            "id": 6,
+                            "title": "ನೂತನ ಕಚೇರಿ ಉದ್ಘಾಟನೆ",
+                            "description": "ಎ.ಎಸ್.ವಿ.ಎನ್.ವಿ. ಎಸ್ ಹಿರಿಯ ವಿದ್ಯಾರ್ಥಿಗಳ ಸಂಘದ ನೂತನ ಕಛೇರಿ  ಪೂಜಾ ಕಾರ್ಯಕ್ರಮ",
+                            "images": [
+                                {
+                                    "id": 85,
+                                    "desktop": "asvnvs/asvnvs-osa-office-inaugaration/1.jpeg",
+                                    "mobile": "asvnvs/asvnvs-osa-office-inaugaration/1.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 86,
+                                    "desktop": "asvnvs/asvnvs-osa-office-inaugaration/2.jpeg",
+                                    "mobile": "asvnvs/asvnvs-osa-office-inaugaration/2.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 87,
+                                    "desktop": "asvnvs/asvnvs-osa-office-inaugaration/3.jpeg",
+                                    "mobile": "asvnvs/asvnvs-osa-office-inaugaration/3.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 88,
+                                    "desktop": "asvnvs/asvnvs-osa-office-inaugaration/4.jpeg",
+                                    "mobile": "asvnvs/asvnvs-osa-office-inaugaration/4.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 89,
+                                    "desktop": "asvnvs/asvnvs-osa-office-inaugaration/5.jpeg",
+                                    "mobile": "asvnvs/asvnvs-osa-office-inaugaration/5.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 90,
+                                    "desktop": "asvnvs/asvnvs-osa-office-inaugaration/6.jpeg",
+                                    "mobile": "asvnvs/asvnvs-osa-office-inaugaration/6.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 91,
+                                    "desktop": "asvnvs/asvnvs-osa-office-inaugaration/7.jpeg",
+                                    "mobile": "asvnvs/asvnvs-osa-office-inaugaration/7.jpeg",
+                                    "alttext": null
+                                }                                
+                            ],
+                            "thumbnails": [
+                                {
+                                    "id": 106,
+                                    "desktop": "asvnvs/asvnvs-osa-office-inaugaration/thumbnails/1.jpeg",
+                                    "mobile": "asvnvs/asvnvs-osa-office-inaugaration/thumbnails/1.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 107,
+                                    "desktop": "asvnvs/asvnvs-osa-office-inaugaration/thumbnails/2.jpeg",
+                                    "mobile": "asvnvs/asvnvs-osa-office-inaugaration/thumbnails/2.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 108,
+                                    "desktop": "asvnvs/asvnvs-osa-office-inaugaration/thumbnails/3.jpeg",
+                                    "mobile": "asvnvs/asvnvs-osa-office-inaugaration/thumbnails/3.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 109,
+                                    "desktop": "asvnvs/asvnvs-osa-office-inaugaration/thumbnails/4.jpeg",
+                                    "mobile": "asvnvs/asvnvs-osa-office-inaugaration/thumbnails/4.jpeg",
+                                    "alttext": null
+                                }                                
                             ]
                         }
                     ]
