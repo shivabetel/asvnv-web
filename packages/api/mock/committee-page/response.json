@@ -1,0 +1,156 @@
+{
+    "data": {
+        "id": 1,
+        "attributes": {
+            "uid": "v1-committee-page",
+            "createdAt": "2023-09-28T13:53:36.295Z",
+            "updatedAt": "2023-09-30T06:42:01.872Z",
+            "publishedAt": "2023-09-28T13:53:38.138Z",
+            "contentBlock": [
+                {
+                    "id": 5,
+                    "__component": "shared.header",
+                    "title": "2022-2025ನೇ ಸಾಲಿನ ಪ್ರಸ್ತುತ ಕಾರ್ಯಕಾರಿ ಸಮಿತಿ",
+                    "description": null,
+                    "textAlignDesktop": null,
+                    "textAlignTablet": null,
+                    "textAlignMobile": null,
+                    "caption": null
+                },
+                {
+                    "id": 1,
+                    "__component": "blocks.members",
+                    "members": [
+                        {
+                            "id": 1,
+                            "name": "ಬಿ. ಕುಮಾರ್",
+                            "role": "ಅಧ್ಯಕ್ಷರು",
+                            "phoneNo": "+919900589419",
+                            "avatar": "asvnvs/asvnvosa-board-memebers/kumar.jpg"
+                        },
+                        {
+                            "id": 2,
+                            "name": "ಗಿರೀಶ್ ಸಿ.",
+                            "role": "ಗೌ|| ಕಾರ್ಯದರ್ಶಿ",
+                            "phoneNo": "+918050495221",
+                            "avatar": "asvnvs/asvnvosa-board-memebers/girish.jpg"
+                        },
+                        {
+                            "id": 3,
+                            "name": "ಹರೀಶ್ ರಾಜಣ್ಣ",
+                            "role": "ಖಜಾಂಚಿ",
+                            "phoneNo": "+919900276724",
+                            "avatar": "asvnvs/asvnvosa-board-memebers/Harish.jpg"
+                        },
+                        {
+                            "id": 4,
+                            "name": "ಬಿ. ಯತೀಶ್",
+                            "role": "ಆಂತರಿಕ ಲೆಕ್ಕ ಪರಿಶೋಧಕರು",
+                            "phoneNo": "+919945344336",
+                            "avatar": "asvnvs/asvnvosa-board-memebers/Yatish.jpg"
+                        },
+                        {
+                            "id": 5,
+                            "name": "ಡಿ.ಪಿ. ಕೃಷ್ಣಪ್ಪ",
+                            "role": "ನಿರ್ದೇಶಕರು",
+                            "phoneNo": "+919980136572",
+                            "avatar": "asvnvs/asvnvosa-board-memebers/Krishnappa.jpg"
+                        },
+                        {
+                            "id": 6,
+                            "name": "ಇಂದಿರಾ ಬಸವರಾಜು",
+                            "role": "ನಿರ್ದೇಶಕರು",
+                            "phoneNo": "+919900864113",
+                            "avatar": "asvnvs/asvnvosa-board-memebers/Indira.jpg"
+                        },
+                        {
+                            "id": 7,
+                            "name": "ಮಧುಶ್ರೀ ಅಶೋಕ್",
+                            "role": "ನಿರ್ದೇಶಕರು",
+                            "phoneNo": "+918970010373",
+                            "avatar": "asvnvs/asvnvosa-board-memebers/Madhushree.jpg"
+                        },
+                        {
+                            "id": 8,
+                            "name": "ಸಿ. ಬಿ. ರಾಘವೇಂದ್ರ ಪ್ರಸಾದ್",
+                            "role": "ನಿರ್ದೇಶಕರು",
+                            "phoneNo": "+919008955733",
+                            "avatar": "asvnvs/asvnvosa-board-memebers/Ragavendra.jpg"
+                        },
+                        {
+                            "id": 9,
+                            "name": "ಡಾ. ರೋಹಿತ್ ಎಸ್",
+                            "role": "ನಿರ್ದೇಶಕರು",
+                            "phoneNo": "+919986957022",
+                            "avatar": "asvnvs/asvnvosa-board-memebers/Rohit.jpg"
+                        },
+                        {
+                            "id": 10,
+                            "name": "ಆರ್. ವಿನಯ್",
+                            "role": "ನಿರ್ದೇಶಕರು",
+                            "phoneNo": "+919986778277",
+                            "avatar": "asvnvs/asvnvosa-board-memebers/vinay.jpg"
+                        },
+                        {
+                            "id": 11,
+                            "name": "ಎಸ್.ಸುನೀಲ್ ಕುಮಾರ್",
+                            "role": "ನಿರ್ದೇಶಕರು",
+                            "phoneNo": "+919886647407",
+                            "avatar": "asvnvs/asvnvosa-board-memebers/SunilKumar.jpg"
+                        },
+                        {
+                            "id": 12,
+                            "name": "ನಾ. ಮಲ್ಲಿಕಾರ್ಜುನ",
+                            "role": "ನಾಮಕರಣ ಸದಸ್ಯರು",
+                            "phoneNo": "+919845280303",
+                            "avatar": "asvnvs/asvnvosa-board-memebers/Mallikarjuna.jpg"
+                        },
+                        {
+                            "id": 13,
+                            "name": "ಎಂ.ಎಸ್. ಕೃಷ್ಣಮೂರ್ತಿ",
+                            "role": "ವಿಶೇಷ ಆಹ್ವಾನಿತರು",
+                            "phoneNo": "+919448469292",
+                            "avatar": "asvnvs/asvnvosa-board-memebers/Krishnamurhty.jpg"
+                        },
+                        {
+                            "id": 14,
+                            "name": "ಜಿ.ಎಂ. ಶಿವಕುಮಾರ್",
+                            "role": "ವಿಶೇಷ ಆಹ್ವಾನಿತರು",
+                            "phoneNo": "+918660036870",
+                            "avatar": "asvnvs/asvnvosa-board-memebers/Shivakumar.jpg"
+                        },
+                        {
+                            "id": 15,
+                            "name": "ಸಿ.ಎಸ್. ವಿವೇಕ್",
+                            "role": "ವಿಶೇಷ ಆಹ್ವಾನಿತರು",
+                            "phoneNo": "+919900925818",
+                            "avatar": "asvnvs/asvnvosa-board-memebers/Vivek.jpg"
+                        },
+                        {
+                            "id": 16,
+                            "name": "ಎಸ್. ಪ್ರಕಾಶ್",
+                            "role": "ಅಧ್ಯಕ್ಷರು,<br/>ಎ.ಎಸ್.ವಿ.ಎನ್.ವಿ. ಸಂಘ (ರಿ)<br/>ಪದನಿಮಿತ್ತ ಸದಸ್ಯರು",
+                            "phoneNo": null,
+                            "avatar": "/asvnvs/asvnvosa-board-memebers/Prakash.jpg"
+                        },
+                        {
+                            "id": 17,
+                            "name": "ಸಚಿನ್ ಶಿವರುದ್ರಪ್ಪ",
+                            "role": "ಅಧ್ಯಕ್ಷರು,<br/>ಶಿವಾಚಾರ ನಗರ್ತ ಯುವಕ ಸಂಘ (ರಿ)<br/>ಪದನಿಮಿತ್ತ ಸದಸ್ಯರು",
+                            "phoneNo": null,
+                            "avatar": "asvnvs/asvnvosa-board-memebers/SachinShivradruppa.jpg"
+                        },
+                        {
+                            "id": 18,
+                            "name": "ಎಸ್. ಅಂಬಿಕಾ ಚಂದ್ರಶೇಖರ್",
+                            "role": "ಅಧ್ಯಕ್ಷರು,<br/>ನಗರ್ತ ಮಹಿಳಾ ಸಂಘ (ರಿ)<br/>ಪದನಿಮಿತ್ತ ಸದಸ್ಯರು",
+                            "phoneNo": null,
+                            "avatar": "asvnvs/asvnvosa-board-memebers/Ambika.jpg"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "meta": {}
+}

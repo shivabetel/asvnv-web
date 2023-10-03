@@ -9,7 +9,9 @@ import { IcClose } from "@jds/core-icons";
 import RichText from "@asvnv/core/components/richtext"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInfo, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
-import EventInfoModal from "./modal";
+import EventInfoModal from "./modal/info";
+import EventFilters from "./filter"
+import EventFiltersModal from "./modal/filter"
 
 
 
@@ -23,6 +25,7 @@ display: flex;
 
 const card = css`
 margin-bottom: 1rem;
+
 `
 
 const imageContainer = css`
@@ -67,6 +70,10 @@ position: fixed;
     width: 100%;
     height: 100vh;
     background: hsla(0,0%,100%,0.96);
+    @media screen and (max-width: 61.9375rem){
+        display: flex;
+        align-items: center;
+    }
 `
 
 const closeIconContainerCss = css`
@@ -75,6 +82,10 @@ right: 5rem;
 z-index: 5;
 span{
     cursor: pointer;
+}
+@media screen and (max-width: 61.9375rem){
+    top: 1rem;
+    right: 1rem;
 }
 `
 const FullViewImageGallery = ({
@@ -118,13 +129,13 @@ const EventImages = ({
                             return (
                                 <>
                                     <div
-                                        css={[imageContainer, index == 3 && gradient]}>
+                                        css={[imageContainer, index == 3 && remainingImages > 4 && gradient]}>
                                         <a onClick={showFullViewImageGallery}>
                                             <Image
                                                 image={thumbnail}
                                                 css={image} />
                                             {
-                                                index == 3 && (
+                                                index == 3 && remainingImages > 4 && (
                                                     <div css={countCss}>
                                                         <Heading color="white">{`+${remainingImages}`}</Heading>
                                                     </div>
@@ -152,7 +163,8 @@ const Events = ({
     const [selectedEventImages, setSelectedEventImages] = useState([]);
     const [eventFilters, setEventFilters] = useState([]);
     const [selectedEvent, setSelectedEvent] = useState();
-    const [allEvents, setAllEvents] = useState(events)
+    const [allEvents, setAllEvents] = useState(events);
+    const [showEventFiltersModal, setShowEventFiltersModal] = useState(false)
 
     useEffect(() => {
         events?.length > 0 && (() => {
@@ -172,27 +184,19 @@ const Events = ({
         setSelectedEventImages(images);
         toggleShowImageGallery();
     }, [showImageGallery, selectedEventImages])
+    
 
 
     const breakpoints = Devices.useMedia();
 
-    const handleEventFilter = (e, index) => {
-        setEventFilters(filters => {
-            const obj = filters[index]
-            obj.checked = e?.target?.checked;
-            filters.splice(index, 1, obj);
-            return filters.map(filter => filter);
-        })
-    }
 
-    useEffect(() => {
+    const handleApplyFilter = (eventFilters) => {
         if (eventFilters?.filter(filter => filter?.checked).length == 0) {
             setAllEvents(events)
         } else {
             setAllEvents(events.filter(event => eventFilters.some(filter => filter?.checked && filter?.label == event?.title)))
         }
-
-    }, [eventFilters, events])
+    }
 
 
 
@@ -202,6 +206,10 @@ const Events = ({
 
     const onCloseEventInfoModal = () => {
         setSelectedEvent(null)
+    }
+
+    const toggleFilterModal = () => {
+        setShowEventFiltersModal(!showEventFiltersModal)
     }
 
 
@@ -217,9 +225,21 @@ const Events = ({
                     templateTablet="1fr"
                     style={{ alignItems: 'flex-start' }}>
                     <Container>
-
                         {
-                            breakpoints?.desktop && (
+                            breakpoints?.tablet && (
+                                <Container
+                                    layout="flex"
+                                    style={{ justifyContent: 'flex-end' }}>
+                                    <Button
+                                        kind="secondary"
+                                        onClick={toggleFilterModal}
+                                        title="ಫಿಲ್ಟರ್"
+                                        icon={<Icon ic={<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 11H7a1 1 0 000 2h10a1 1 0 000-2zm-3 6h-4a1 1 0 000 2h4a1 1 0 000-2zm6-12H4a1 1 0 000 2h16a1 1 0 100-2z" fill="currentColor"></path></svg>} />} />
+                                </Container>
+                            )
+                        }
+                        {
+                            breakpoints.desktop && (
                                 <>
                                     <Container
                                         as="div"
@@ -230,38 +250,22 @@ const Events = ({
                                         <Heading as="h5">ಫಿಲ್ಟರ್</Heading>
                                     </Container>
                                     <Divider />
+                                    <EventFilters
+                                        filterValues={eventFilters}
+                                        applyFilter={handleApplyFilter} />
                                 </>
+
                             )
+
                         }
                         {
-                            breakpoints?.tablet && (
-                                <Container
-                                    layout="flex"
-                                    style={{ justifyContent: 'flex-end' }}>
-                                    <Button
-                                        kind="secondary"
-                                        title="Filter"
-                                        icon={<Icon ic={<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 11H7a1 1 0 000 2h10a1 1 0 000-2zm-3 6h-4a1 1 0 000 2h4a1 1 0 000-2zm6-12H4a1 1 0 000 2h16a1 1 0 100-2z" fill="currentColor"></path></svg>} />} />
-                                </Container>
+                            breakpoints.tablet && showEventFiltersModal && (
+                                <EventFiltersModal
+                                    filterValues={eventFilters}
+                                    handleEventClose={toggleFilterModal}
+                                    applyFilter={handleApplyFilter} />
                             )
-                        }
-                        {
-                            breakpoints.desktop && (eventFilters || []).map((filter, index) => {
-                                return (
-                                    <Container
-                                        as="div"
-                                        pad="xs"
-                                        padPosition="vertical"
-                                    >
-                                        <Input
-                                            type="checkbox"
-                                            name="filter"
-                                            label={<Heading appearance="heading-xxs">{filter?.label}</Heading>}
-                                            checked={filter?.checked}
-                                            onChange={(e) => handleEventFilter(e, index)} />
-                                    </Container>
-                                )
-                            })
+
                         }
                     </Container>
                     <Grid
@@ -276,9 +280,9 @@ const Events = ({
 
                                     <Container
                                         key={index}
-                                        className="j-card j-card__shadow no-top-padding"
+                                        className="j-card j-card__shadow no-top-padding h-100"
                                         layout="flex"
-                                        css={[card, lAlignCenter]}
+                                        css={[card]}
                                     >
                                         <EventImages
                                             thumbnails={thumbnails}
@@ -289,7 +293,7 @@ const Events = ({
                                             layout="flex"
                                             pad="s"
                                             padPosition="horizontal"
-                                            style={{ alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
+                                            style={{ alignItems: 'center', justifyContent: 'space-between', width: '100%', flexWrap: 'nowrap' }}>
                                             <div>
                                                 <Container
                                                     as="div"

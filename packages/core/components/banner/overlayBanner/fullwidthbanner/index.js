@@ -62,7 +62,8 @@ const FullWidthOverlayBanner = ({
     const getMediaElement = useCallback(() => {
         if (banner?.bannerImage)
             // return <img src='https://storage.googleapis.com/asvnvs/2nd-sneha-sammilana/1.jpeg'></img>
-            return <Image alt={banner?.headerText} image={banner?.bannerImage} />
+            return  <img src='/test.webp'></img>
+            //<Image alt={banner?.headerText} image={banner?.bannerImage} />
         if (banner.bannerImages?.length > 0)
             return <Image alt={banner?.headerText} image={banner?.bannerImages[0]} />
         // if (banner.bannerVideo)

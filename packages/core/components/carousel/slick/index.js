@@ -229,7 +229,7 @@ const SlickCarousel = ({ children, dots = true, overideProps, ...restOfProps }) 
                 draggable={true}
                 appendDots={dots => <ul css={ulDots}>{dots}</ul>}
                 afterChange={handleAfterChange}
-                beforeChange={handleBeforeChange}
+                beforeChange={handleBeforeChange}                             
                 // prevArrow={<PrevArrow />}
                 // nextArrow={<NextArrow />}
                 {...restOfProps}

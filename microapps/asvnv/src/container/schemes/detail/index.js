@@ -71,10 +71,22 @@ const topHeaderOverideProps = {
 
 const Detail = React.forwardRef(({ content, setRefs, updateQuickLink }, ref) => {
     const inViewRef = useRef();
+    let { uid } = useParams();
+
+    console.log("uid::Detail",uid);
     const setRef = useCallback((node) => {
         setRefs(node);
         inViewRef.current = node
     }, [setRefs]);
+
+
+    useEffect(() => {
+        uid && uid !== 'all' && inViewRef.current && inViewRef.current.scrollIntoView({
+            behavior: "smooth"
+        })
+
+    }, [inViewRef.current, uid])
+    
 
 
 

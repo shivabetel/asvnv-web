@@ -14,8 +14,14 @@ const transformImageCMSResponse = (block) => {
     return transformImage(imageObj)
 }
 
+const transformImagesCMSResponse = (block) => {
+    const imageObj = castArray(block).find(obj => obj['__component'] == 'blocks.images')
+    return imageObj ? (imageObj?.images || []).map(image => transformImage(image)) : null;
+}
+
 
 export {
     transformImageCMSResponse,
+    transformImagesCMSResponse,
     transformImage
 }

@@ -35,8 +35,8 @@ const CarouselOverlayHeaderBanner = ({
                 style={{ overflow: 'hidden' }}
                 {...containerLayoutProps}>
                 <SlickCarousel
-                    fade={true}
-                    speed={1000}
+                    // fade={true}
+                    speed={500}
                     dots={true}
                     overideProps={overideProps?.slickCarousel}>
                     {

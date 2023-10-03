@@ -1,13 +1,13 @@
 /** @jsxImportSource @emotion/react */
-import { Container, Devices, Header, Heading, Icon, Button, Link } from "@jds/core";
+import { Container, Devices, Header, Heading, Icon, Button, Link, Text } from "@jds/core";
 import { css } from "@emotion/react";
-import { default as RouterLink } from "next/link";
 import { useEffect, useState } from "react";
 import { Menu, MenuItem, MenuButton } from '@szhsin/react-menu';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown, faCaretDown, faHouse } from '@fortawesome/free-solid-svg-icons';
 import { Routes, Route, Outlet, NavLink, BrowserRouter } from "react-router-dom";
 import useNavigation from "../../hooks/useNavigation";
+import { NavLink as RouterLink } from "react-router-dom"
 
 const headerCss = css`
 height: 80px;
@@ -47,6 +47,12 @@ max-height: 80px;
     // text-align: center;
   }
 }
+
+
+.header-page-menu .item:not(:last-child){
+  border-bottom: 1px solid var(--color-primary-grey-40);
+  padding: 0.5rem 0;
+}
 `
 const subNavCss = css`
 .active button{
@@ -64,7 +70,7 @@ const AppHeader = (props) => {
   const { headerConfig } = props;
   const breakpoints = Devices.useMedia();
   const [activeLink, setActiveLink] = useState();
-  const {navigate} = useNavigation();
+  const { navigate } = useNavigation();
   const [menuLinks, setMenuLinks] = useState();
   const [activeMenuLink, setActiveMenuLink] = useState("link1");
   const [subLinks, setSubLinks] = useState([]);
@@ -97,7 +103,10 @@ const AppHeader = (props) => {
     <Container as="div">
       <Header
         css={headerCss}
-        logo={<Icon size="fill" ic={<img src="https://storage.googleapis.com/asvnvs/logo.jpeg"></img>}/>}
+        logo={<Icon size="fill" ic={<img src="https://storage.googleapis.com/asvnvs/logo.jpeg"></img>} />}
+        logoLink={{
+          onClick: () => navigate("/")
+        }}
         pageTitle={(
           <Container
             as="div"
@@ -107,86 +116,37 @@ const AppHeader = (props) => {
           </Container>
         )}
         links={
-          (breakpoints.mobile && headerConfig?.links || []).map(({ name, href }, index) => ({
+          (breakpoints.tablet && headerConfig?.links?.[0]?.subLinks || []).map(({ name, href, icon }, index) => ({
             newTab: false,
-            title: name,
-            provider: <Link provider={<RouterLink href={href} />} textAppearance="body-s" button={{ as: 'span', kind: 'primary', className: `j-tab header-tab ${index == activeLink ? 'active' : null}` }}></Link>,
+            titleEl: {
+              prefix: (
+                <Icon
+                  ic={<FontAwesomeIcon icon={icon} />}
+                  color="primary"
+                  kind="icon-only"
+                />
+              ),
+              titleBlock: {
+                text: <Text appearance="body-m-bold" color="primary-50">{name}</Text>
+              }
+            },
+            provider: (
+              <Link
+                provider={<RouterLink to={href} />}
+                textAppearance="body-m-bold"
+                button={{ as: 'span', kind: 'tertiary', className: `j-tab header-tab custom-menu-item ${index == activeLink ? 'active' : null}` }}
+              >
+              </Link>
+            ),
             onClick: () => setActiveLink(index)
           })
           )}
       />
-      {/* {
-        breakpoints?.desktop && <Container layout="flex">
-          <img src="/image1.jpeg"></img>
-        </Container>
-      }
-      {
-        breakpoints?.desktop && <Container layout="flex">
-          <img src="/image2.jpeg"></img>
-        </Container>
-      } */}
       {
         breakpoints?.desktop && (
           <Container
             as="div"
             background="primary-50">
-            <Container layout="max-width">
-              {/* {
-                (headerConfig?.links || []).map(({ name, href, subLinks }, index) => (
-                  <>
-                    {
-                      subLinks?.length > 0 ? (
-                        <Menu menuButton={<Button title={name} icon={<Icon
-                          ic={<FontAwesomeIcon icon={faCaretDown} />}
-                          color="white"
-                          kind="icon-only"
-                        />}></Button>}>
-                          {
-                            (subLinks?.length > 0 && subLinks.map(({ name, icon, href }, index) => (
-                              <MenuItem 
-                              value={href}
-                              onClick={handleMenuClick}>
-                                <Container
-                                  layout="flex"
-                                  pad="xs"
-                                  padPosition="vertical"
-                                >
-                                  <Icon
-                                    ic={<FontAwesomeIcon icon={icon} />}
-                                    color="primary"
-                                    kind="icon-only"
-                                  />
-                                  <Heading as="h6" color="primary-50">{name}</Heading>
-                                </Container>
-                              </MenuItem>
-                            )))
-                          }
-                        </Menu>
-                      ) : <Button title={name}></Button>
-                    }
-                  </>
-
-                ))
-              } */}
-
-
-              {/* {
-                (menuLinks || []).map(({ name, uid }, index) => (
-                  <>
-                    {
-                      (
-                        <Button
-                          data-mode={activeMenuLink == uid ? 'dark' : ''}
-                          title={name}
-                          onClick={() => handleEventTopMenuClick(uid)} />
-                      )
-                    }
-                  </>
-
-                ))
-              } */}
-
-            </Container>
             <Container
               as="div"
               layout="max-width"

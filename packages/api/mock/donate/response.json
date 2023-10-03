@@ -1,0 +1,82 @@
+{
+    "data": {
+        "id": 1,
+        "attributes": {
+            "uid": "v1-donate-page",
+            "createdAt": "2023-09-16T11:30:21.681Z",
+            "updatedAt": "2023-09-22T14:40:00.899Z",
+            "publishedAt": "2023-09-16T11:32:51.687Z",
+            "contentBlock": [
+                {
+                    "id": 1,
+                    "__component": "blocks.account-detaills",
+                    "details": [
+                        {
+                            "id": 1,
+                            "key": "ಹೆಸರು",
+                            "value": "ASVNVS OLD STUDENTS ASSOCIATION"
+                        },
+                        {
+                            "id": 2,
+                            "key": "ಬ್ಯಾಂಕಿನ ಹೆಸರು",
+                            "value": "Bank of Baroda"
+                        },
+                        {
+                            "id": 3,
+                            "key": "ಖಾತೆ",
+                            "value": "SAVINGS BANK"
+                        },
+                        {
+                            "id": 4,
+                            "key": "ಖಾತೆ ಸಂಖ್ಯೆ",
+                            "value": "05190100007236"
+                        },
+                        {
+                            "id": 5,
+                            "key": "IFSC ಕೋಡ್",
+                            "value": "BARB0BANGAL(Fifth Character is Zero)"
+                        },
+                        {
+                            "id": 6,
+                            "key": "ಶಾಖೆ",
+                            "value": "K G Road, Bangalore"
+                        },
+                        {
+                            "id": 7,
+                            "key": "ಪ್ಯಾನ್",
+                            "value": "AACTA9975G"
+                        },
+                        {
+                            "id": 8,
+                            "key": "ಸಂಪರ್ಕ ಸಂಖ್ಯೆ",
+                            "value": "9900589419, 8050495221, 8660036870"
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "__component": "shared.header",
+                    "title": "ಬ್ಯಾಂಕ್ ಖಾತೆ ವಿವರಗಳು",
+                    "description": "ಸಂಘಕ್ಕೆ ಸಹಾಯ ಹಸ್ತ ಚಾಚಲು ಬಯಸುವ ಸಮಾಜ ಬಂಧುಗಳು  ಡಿಡಿ / ಚೆಕ್/ NEFT / RTGS ಮೂಲಕ ಈ ಕೆಳಗಿನ ಬ್ಯಾಂಕ್ ಖಾತೆಗೆ ಅಥವಾ ಕೆಳಗಿನಾ QR ಕೋಡ್ ಸ್ಕ್ಯಾನ್  ಹಣ ಸಂದಾಯ ಮಾಡಬಹುದು.",
+                    "textAlignDesktop": null,
+                    "textAlignTablet": null,
+                    "textAlignMobile": null,
+                    "caption": null
+                },
+                {
+                    "id": 1,
+                    "__component": "blocks.rich-text",
+                    "text": "ದಯವಿಟ್ಟು ಹಣ ಸಂದಾಯದ ಬಗ್ಗೆ, ಸಂಪರ್ಕ ಸಂಖ್ಯೆಗೆ ಮಾಹಿತಿ ನೀಡಿ ರಸೀದಿಯನ್ನು ಪಡೆಯುವಂತೆ ಕೋರಿದೆ"
+                },
+                {
+                    "id": 169,
+                    "__component": "shared.image",
+                    "desktop": "asvnv/assets/donate/upi-qrcode.webp",
+                    "mobile": "asvnv/assets/donate/upi-qrcode.webp",
+                    "alttext": null
+                }
+            ]
+        }
+    },
+    "meta": {}
+}

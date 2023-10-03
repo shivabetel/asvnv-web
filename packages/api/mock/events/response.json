@@ -4,13 +4,173 @@
         "attributes": {
             "uid": "v1-events-page",
             "createdAt": "2023-08-19T16:10:53.662Z",
-            "updatedAt": "2023-09-15T12:35:44.856Z",
+            "updatedAt": "2023-09-16T09:44:01.084Z",
             "publishedAt": "2023-08-19T16:14:22.897Z",
             "eventsBlock": [
                 {
                     "id": 1,
                     "__component": "blocks.events",
-                    "events": [                        
+                    "events": [
+                        {
+                            "id": 9,
+                            "title": "ವಿಜಯಪುರದಲ್ಲಿ ಉಚಿತ ಬೃಹತ್ ಆರೋಗ್ಯ ತಪಾಸಣಾ ಶಿಬಿರ",
+                            "description": "ದಿನಾಂಕ: 19.03.2023 ರಂದು ವಿಜಯಪುರದ ಶ್ರೀ ನಗರೇಶ್ವರ ಸ್ವಾಮಿ ಪ್ರಾರ್ಥನಾ ಮಂದಿರದಲ್ಲಿ ಅ.ಶಿ.ವೈ. ನಗರ್ತ ಯುವಕ ಸಂಘ ವಿಜಯಪುರ, ಎ.ಎಸ್.ವಿ.ಎನ್.ವಿ.ಎಸ್. ಹಿರಿಯ ವಿದ್ಯಾರ್ಥಿಗಳ ಸಂಘ, ಬೆಂಗಳೂರು, ಶ್ರೀ ನಗರೇಶ್ವರ ಸ್ವಾಮಿ ಸೇವಾ ಟ್ರಸ್ಟ್ (ರಿ). ವಿಜಯಪುರ, ಅ.ಶಿ.ವೈ. ನಗರ್ತ\nಮಹಿಳಾ ಸಂಘ ವಿಜಯಪುರ ಇವರ ಸಂಯುಕ್ತ ಆಶ್ರಯದಲ್ಲಿ <strong>“ಉಚಿತ ಆರೋಗ್ಯ ತಪಾಸಣಾ ಶಿಬಿರ”</strong> ವನ್ನು ಏರ್ಪಡಿಸಲಾಗಿತ್ತು. ಈ ಶಿಬಿರದಲ್ಲಿ ಸಿದ್ಧಗಂಗಾ ಆಸ್ಪತ್ರೆಯ ಹೃದಯ ತಜ್ಞರಾದ ಡಾ|| ರವಿಚಂದ್ರ ಜೆ.ಬಿ., ಕುಟುಂಬ ತಜ್ಞ ವೈದ್ಯರಾದ ಡಾ|| ಭಾಸ್ಕರ ಪಿ., ಮಕ್ಕಳ ವೈದ್ಯರಾದ ಡಾ|| ಮಂಜುನಾಥ್ ವಿ.ಪಿ., ವೈದ್ಯರಾದ ಡಾ|| ಕನಕ ಸ್ವರೂಪ್ ನಟರಾಜ್ ಹಾಗೂ ಸ್ತ್ರೀ ರೋಗ ತಜ್ಞರಾದ ಡಾ|| ದೀಕ್ಷಾ ಜನಾರ್ಧನ್ ಇವರುಗಳು ಭಾಗವಹಿಸಿದ್ದು, ಆರೋಗ್ಯ ತಪಾಸಣೆಯನ್ನು ನಡೆಸಿದರು. ಈ ಕಾರ್ಯಕ್ರಮದಲ್ಲಿ ಸುಮಾರು ೨೫೦ ಜನ ಹಾಗೂ 30 ಮಕ್ಕಳು ತಪಾಸಣೆ ಮಾಡಿಸಿಕೊಂಡು ಶಿಬಿರವನ್ನು ಯಶಸ್ವಿಗೊಳಿಸಿದರು.",
+                            "shortDescription": "ವಿಜಯಪುರದಲ್ಲಿ ಉಚಿತ ಬೃಹತ್ ಆರೋಗ್ಯ ತಪಾಸಣಾ ಶಿಬಿರ",
+                            "images": [
+                                {
+                                    "id": 136,
+                                    "desktop": "asvnvs/health-camp-vijipura/1.jpeg",
+                                    "mobile": "asvnvs/health-camp-vijipura/1.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 137,
+                                    "desktop": "asvnvs/health-camp-vijipura/2.jpeg",
+                                    "mobile": "asvnvs/health-camp-vijipura/2.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 138,
+                                    "desktop": "asvnvs/health-camp-vijipura/3.jpeg",
+                                    "mobile": "asvnvs/health-camp-vijipura/3.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 139,
+                                    "desktop": "asvnvs/health-camp-vijipura/4.jpeg",
+                                    "mobile": "asvnvs/health-camp-vijipura/4.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 140,
+                                    "desktop": "asvnvs/health-camp-vijipura/5.jpeg",
+                                    "mobile": "asvnvs/health-camp-vijipura/5.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 141,
+                                    "desktop": "asvnvs/health-camp-vijipura/6.jpeg",
+                                    "mobile": "asvnvs/health-camp-vijipura/6.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 142,
+                                    "desktop": "asvnvs/health-camp-vijipura/7.jpeg",
+                                    "mobile": "asvnvs/health-camp-vijipura/7.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 143,
+                                    "desktop": "asvnvs/health-camp-vijipura/8.jpeg",
+                                    "mobile": "asvnvs/health-camp-vijipura/8.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 144,
+                                    "desktop": "asvnvs/health-camp-vijipura/9.jpeg",
+                                    "mobile": "asvnvs/health-camp-vijipura/9.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 145,
+                                    "desktop": "asvnvs/health-camp-vijipura/10.jpeg",
+                                    "mobile": "asvnvs/health-camp-vijipura/10.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 146,
+                                    "desktop": "asvnvs/health-camp-vijipura/11.jpeg",
+                                    "mobile": "asvnvs/health-camp-vijipura/11.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 147,
+                                    "desktop": "asvnvs/health-camp-vijipura/12.jpeg",
+                                    "mobile": "asvnvs/health-camp-vijipura/12.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 148,
+                                    "desktop": "asvnvs/health-camp-vijipura/13.jpeg",
+                                    "mobile": "asvnvs/health-camp-vijipura/13.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 149,
+                                    "desktop": "asvnvs/health-camp-vijipura/14.jpeg",
+                                    "mobile": "asvnvs/health-camp-vijipura/14.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 150,
+                                    "desktop": "asvnvs/health-camp-vijipura/15.jpeg",
+                                    "mobile": "asvnvs/health-camp-vijipura/15.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 151,
+                                    "desktop": "asvnvs/health-camp-vijipura/16.jpeg",
+                                    "mobile": "asvnvs/health-camp-vijipura/16.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 152,
+                                    "desktop": "asvnvs/health-camp-vijipura/17.jpeg",
+                                    "mobile": "asvnvs/health-camp-vijipura/17.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 153,
+                                    "desktop": "asvnvs/health-camp-vijipura/18.jpeg",
+                                    "mobile": "asvnvs/health-camp-vijipura/18.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 154,
+                                    "desktop": "asvnvs/health-camp-vijipura/19.jpeg",
+                                    "mobile": "asvnvs/health-camp-vijipura/19.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 155,
+                                    "desktop": "asvnvs/health-camp-vijipura/20.jpeg",
+                                    "mobile": "asvnvs/health-camp-vijipura/20.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 156,
+                                    "desktop": "asvnvs/health-camp-vijipura/21.jpeg",
+                                    "mobile": "asvnvs/health-camp-vijipura/21.jpeg",
+                                    "alttext": null
+                                }
+                            ],
+                            "thumbnails": [
+                                {
+                                    "id": 157,
+                                    "desktop": "asvnvs/health-camp-vijipura/thumbnails/thumbnail_1_f44f155662.jpeg",
+                                    "mobile": "asvnvs/health-camp-vijipura/thumbnails/thumbnail_1_f44f155662.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 158,
+                                    "desktop": "asvnvs/health-camp-vijipura/thumbnails/thumbnail_2_bc64780206.jpeg",
+                                    "mobile": "asvnvs/health-camp-vijipura/thumbnails/thumbnail_2_bc64780206.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 159,
+                                    "desktop": "asvnvs/health-camp-vijipura/thumbnails/thumbnail_3_90dd41ea27.jpeg",
+                                    "mobile": "asvnvs/health-camp-vijipura/thumbnails/thumbnail_3_90dd41ea27.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 160,
+                                    "desktop": "asvnvs/health-camp-vijipura/thumbnails/thumbnail_4_316a8715d1.jpeg",
+                                    "mobile": "asvnvs/health-camp-vijipura/thumbnails/thumbnail_4_316a8715d1.jpeg",
+                                    "alttext": null
+                                }
+                            ]
+                        },
                         {
                             "id": 6,
                             "title": "7ನೇ ಸ್ನೇಹ ಸಮ್ಮಿಲನ",
@@ -285,6 +445,64 @@
                                     "id": 84,
                                     "desktop": "asvnvs/6th-sneha-sammilana/thumbnails/thumbnail_4_90c4798c73.jpeg",
                                     "mobile": "asvnvs/6th-sneha-sammilana/thumbnails/thumbnail_4_90c4798c73.jpeg",
+                                    "alttext": null
+                                }
+                            ]
+                        },
+                        {
+                            "id": 10,
+                            "title": "ಕೊಡಗು ಪ್ರವಾಹ ಸಂತ್ರಸ್ತರಿಗೆ ಸಹಾಯಹಸ್ತ",
+                            "description": "ದಶಮಾನೋತ್ಸವ ಕಾರ್ಯಕ್ರಮದ ನಂತರ ಸೆಪ್ಟೆಂಬರ್ 2018 ರಲ್ಲಿ ಕೊಡಗಿನಲ್ಲಿ ಕಂಡು ಕೇಳರಿಯದ ರೀತಿಯಲ್ಲಿ ಪ್ರವಾಹದಿಂದ ಜನರ ಜೀವನ ಅಸ್ತವ್ಯಸ್ತಗೊಂಡಿದ್ದು, ಈ ಸಂದರ್ಭದಲ್ಲಿ ಸಮಾಜ ಬಂಧುಗಳಿಂದ ಒಟ್ಟು ರೂ. 37,000/- ಗಳ ಹಣ ಸಂಗ್ರಹಿಸಿ, ಕೊಡಗು ಸಂತ್ರಸ್ತರಿಗೆ ಜೀವನಾವಶ್ಯಕ ವಸ್ತುಗಳನ್ನು ನೇರವಾಗಿ ವಿತರಿಸಲಾಯಿತು.",
+                            "shortDescription": "ಕೊಡಗು ಪ್ರವಾಹ ಸಂತ್ರಸ್ತರಿಗೆ ಸಹಾಯಹಸ್ತ",
+                            "images": [
+                                {
+                                    "id": 161,
+                                    "desktop": "asvnvs/madekeri-floods-service/1.jpeg",
+                                    "mobile": "asvnvs/madekeri-floods-service/1.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 162,
+                                    "desktop": "asvnvs/madekeri-floods-service/2.jpeg",
+                                    "mobile": "asvnvs/madekeri-floods-service/2.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 163,
+                                    "desktop": "asvnvs/madekeri-floods-service/3.jpeg",
+                                    "mobile": "asvnvs/madekeri-floods-service/3.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 164,
+                                    "desktop": "asvnvs/madekeri-floods-service/4.jpeg",
+                                    "mobile": "asvnvs/madekeri-floods-service/4.jpeg",
+                                    "alttext": null
+                                }
+                            ],
+                            "thumbnails": [
+                                {
+                                    "id": 165,
+                                    "desktop": "asvnvs/madekeri-floods-service/thumbnails/1.jpeg",
+                                    "mobile": "asvnvs/madekeri-floods-service/thumbnails/1.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 166,
+                                    "desktop": "asvnvs/madekeri-floods-service/thumbnails/2.jpeg",
+                                    "mobile": "asvnvs/madekeri-floods-service/thumbnails/2.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 167,
+                                    "desktop": "asvnvs/madekeri-floods-service/thumbnails/3.jpeg",
+                                    "mobile": "asvnvs/madekeri-floods-service/thumbnails/3.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 168,
+                                    "desktop": "asvnvs/madekeri-floods-service/thumbnails/4.jpeg",
+                                    "mobile": "asvnvs/madekeri-floods-service/thumbnails/4.jpeg",
                                     "alttext": null
                                 }
                             ]
@@ -714,78 +932,155 @@
                             ]
                         },
                         {
-                            "id": 6,
-                            "title": "ನೂತನ ಕಚೇರಿ ಉದ್ಘಾಟನೆ",
-                            "description": "ಎ.ಎಸ್.ವಿ.ಎನ್.ವಿ. ಎಸ್ ಹಿರಿಯ ವಿದ್ಯಾರ್ಥಿಗಳ ಸಂಘದ ನೂತನ ಕಛೇರಿ  ಪೂಜಾ ಕಾರ್ಯಕ್ರಮ",
+                            "id": 8,
+                            "title": "ರಕ್ತದಾನ ಶಿಬಿರ",
+                            "description": "ದಿನಾಂಕ: 15.12.2019 ರಂದು ಶ್ರೀ ನಗರೇಶ್ವರಸ್ವಾಮಿ ಕಲ್ಯಾಣ ಮಂಟಪದಲ್ಲಿ ವಿಕ್ಟೋರಿಯಾ ಆಸ್ಪತ್ರೆಯ ರಕ್ತನಿಧಿ ಘಟಕದ ಸಹಯೋಗದೊಂದಿಗೆ ಹಾಗೂ ಎಲ್ಲಾ ಅಂಗ ಸಂಸ್ಥೆಗಳ ಸಹಕಾರದೊಂದಿಗೆ ಬೃಹತ್ ರಕ್ತದಾನ ಶಿಬಿರವನ್ನು ಆಯೋಜಿಸಿ ೮೩ ಯೂನಿಟ್ ರಕ್ತವನ್ನು ಸಂಗ್ರಹಿಸುವುದರೊಂದಿಗೆ ಯಶಸ್ವಿಗೊಳಿಸಲಾಯಿತು.",
+                            "shortDescription": "ರಕ್ತದಾನ ಶಿಬಿರ",
                             "images": [
                                 {
-                                    "id": 85,
+                                    "id": 125,
+                                    "desktop": "asvnvs/blood-donation-camp-16-07-2017/1.jpeg",
+                                    "mobile": "asvnvs/blood-donation-camp-16-07-2017/1.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 126,
+                                    "desktop": "asvnvs/blood-donation-camp-16-07-2017/2.jpeg",
+                                    "mobile": "asvnvs/blood-donation-camp-16-07-2017/2.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 127,
+                                    "desktop": "asvnvs/blood-donation-camp-16-07-2017/3.jpeg",
+                                    "mobile": "asvnvs/blood-donation-camp-16-07-2017/3.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 128,
+                                    "desktop": "asvnvs/blood-donation-camp-16-07-2017/4.jpeg",
+                                    "mobile": "asvnvs/blood-donation-camp-16-07-2017/4.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 129,
+                                    "desktop": "asvnvs/blood-donation-camp-16-07-2017/5.jpeg",
+                                    "mobile": "asvnvs/blood-donation-camp-16-07-2017/5.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 130,
+                                    "desktop": "asvnvs/blood-donation-camp-16-07-2017/6.jpeg",
+                                    "mobile": "asvnvs/blood-donation-camp-16-07-2017/6.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 131,
+                                    "desktop": "asvnvs/blood-donation-camp-16-07-2017/7.jpeg",
+                                    "mobile": "asvnvs/blood-donation-camp-16-07-2017/7.jpeg",
+                                    "alttext": null
+                                }
+                            ],
+                            "thumbnails": [
+                                {
+                                    "id": 132,
+                                    "desktop": "asvnvs/blood-donation-camp-16-07-2017/thumbnails/1.jpeg",
+                                    "mobile": "asvnvs/blood-donation-camp-16-07-2017/thumbnails/1.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 133,
+                                    "desktop": "asvnvs/blood-donation-camp-16-07-2017/thumbnails/2.jpeg",
+                                    "mobile": "asvnvs/blood-donation-camp-16-07-2017/thumbnails/2.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 134,
+                                    "desktop": "asvnvs/blood-donation-camp-16-07-2017/thumbnails/3.jpeg",
+                                    "mobile": "asvnvs/blood-donation-camp-16-07-2017/thumbnails/3.jpeg",
+                                    "alttext": null
+                                },
+                                {
+                                    "id": 135,
+                                    "desktop": "asvnvs/blood-donation-camp-16-07-2017/thumbnails/4.jpeg",
+                                    "mobile": "asvnvs/blood-donation-camp-16-07-2017/thumbnails/4.jpeg",
+                                    "alttext": null
+                                }
+                            ]
+                        },
+                        {
+                            "id": 7,
+                            "title": "ನೂತನ ಕಚೇರಿ ಉದ್ಘಾಟನೆ",
+                            "description": "ಬೆಂಗಳೂರು ಕೆ.ಜಿ.ರಸ್ತೆಯ ASVNV ಭವನದ 7ನೇ ಮಹಡಿಯಲ್ಲಿ ಮಾತೃಸಂಸ್ಥೆಯಿಂದ  ನೂತನ ಕಛೇರಿ ವ್ಯವಸ್ಥೆಯನ್ನು ಕಲ್ಪಿಸಿದ್ದು, ದಿನಾಂಕ : 02.03.2019 ರ ಶನಿವಾರದಂದು ಸಂಜೆ 4:00 ಘಂಟೆಗೆ  ಎ.ಎಸ್.ವಿ.ಎನ್.ವಿ. ಎಸ್ ಹಿರಿಯ ವಿದ್ಯಾರ್ಥಿಗಳ ಸಂಘದ ನೂತನ ಕಛೇರಿ  ಪೂಜಾ ಕಾರ್ಯಕ್ರಮ ನಡೆಯಿತು ಮಾತೃ ಸಂಸ್ಥೆ ಒಳಗೊಂಡಂತೆ ಅಂಗ ಸಂಸ್ಥೆಗಳ ಪದಾಧಿಕಾರಿಗಳು ಹಾಗೂ ನಿರ್ದೇಶಕರು ಸಮಾಜದ ಬಂಧುಗಳು ಪೂಜಾ ಕಾರ್ಯದಲ್ಲಿ ಭಾಗಿಯಾಗಿದ್ದ ಸವಿ ಕ್ಷಣ",
+                            "shortDescription": "ಎ.ಎಸ್.ವಿ.ಎನ್.ವಿ. ಎಸ್ ಹಿರಿಯ ವಿದ್ಯಾರ್ಥಿಗಳ ಸಂಘದ ನೂತನ ಕಛೇರಿ  ಪೂಜಾ ಕಾರ್ಯಕ್ರಮ",
+                            "images": [
+                                {
+                                    "id": 114,
                                     "desktop": "asvnvs/asvnvs-osa-office-inaugaration/1.jpeg",
                                     "mobile": "asvnvs/asvnvs-osa-office-inaugaration/1.jpeg",
                                     "alttext": null
                                 },
                                 {
-                                    "id": 86,
+                                    "id": 115,
                                     "desktop": "asvnvs/asvnvs-osa-office-inaugaration/2.jpeg",
                                     "mobile": "asvnvs/asvnvs-osa-office-inaugaration/2.jpeg",
                                     "alttext": null
                                 },
                                 {
-                                    "id": 87,
+                                    "id": 116,
                                     "desktop": "asvnvs/asvnvs-osa-office-inaugaration/3.jpeg",
                                     "mobile": "asvnvs/asvnvs-osa-office-inaugaration/3.jpeg",
                                     "alttext": null
                                 },
                                 {
-                                    "id": 88,
+                                    "id": 117,
                                     "desktop": "asvnvs/asvnvs-osa-office-inaugaration/4.jpeg",
                                     "mobile": "asvnvs/asvnvs-osa-office-inaugaration/4.jpeg",
                                     "alttext": null
                                 },
                                 {
-                                    "id": 89,
+                                    "id": 118,
                                     "desktop": "asvnvs/asvnvs-osa-office-inaugaration/5.jpeg",
                                     "mobile": "asvnvs/asvnvs-osa-office-inaugaration/5.jpeg",
                                     "alttext": null
                                 },
                                 {
-                                    "id": 90,
+                                    "id": 119,
                                     "desktop": "asvnvs/asvnvs-osa-office-inaugaration/6.jpeg",
                                     "mobile": "asvnvs/asvnvs-osa-office-inaugaration/6.jpeg",
                                     "alttext": null
                                 },
                                 {
-                                    "id": 91,
+                                    "id": 120,
                                     "desktop": "asvnvs/asvnvs-osa-office-inaugaration/7.jpeg",
                                     "mobile": "asvnvs/asvnvs-osa-office-inaugaration/7.jpeg",
                                     "alttext": null
-                                }                                
+                                }
                             ],
                             "thumbnails": [
                                 {
-                                    "id": 106,
+                                    "id": 121,
                                     "desktop": "asvnvs/asvnvs-osa-office-inaugaration/thumbnails/1.jpeg",
                                     "mobile": "asvnvs/asvnvs-osa-office-inaugaration/thumbnails/1.jpeg",
                                     "alttext": null
                                 },
                                 {
-                                    "id": 107,
+                                    "id": 122,
                                     "desktop": "asvnvs/asvnvs-osa-office-inaugaration/thumbnails/2.jpeg",
                                     "mobile": "asvnvs/asvnvs-osa-office-inaugaration/thumbnails/2.jpeg",
                                     "alttext": null
                                 },
                                 {
-                                    "id": 108,
+                                    "id": 123,
                                     "desktop": "asvnvs/asvnvs-osa-office-inaugaration/thumbnails/3.jpeg",
                                     "mobile": "asvnvs/asvnvs-osa-office-inaugaration/thumbnails/3.jpeg",
                                     "alttext": null
                                 },
                                 {
-                                    "id": 109,
+                                    "id": 124,
                                     "desktop": "asvnvs/asvnvs-osa-office-inaugaration/thumbnails/4.jpeg",
                                     "mobile": "asvnvs/asvnvs-osa-office-inaugaration/thumbnails/4.jpeg",
                                     "alttext": null
-                                }                                
+                                }
                             ]
                         }
                     ]

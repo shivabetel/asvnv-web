@@ -20,7 +20,6 @@ export const getButtonProps = ({ button, onClick = () => { }, overideButtonProps
 }
 const JButton = (props) => {    
     const { button, iconElement, onClick, handleLogAnalytics, getTargeturlParamValues, overideButtonProps, ...restOfProps } = props;
-    console.log("JButton props::",restOfProps);
 
     let { iconPosition = 'right' } = (button || {});
     iconPosition = iconPosition || 'right';

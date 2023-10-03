@@ -8,11 +8,13 @@ const transformHomePageApiResponse = (response) => {
     let result = {}
     if (data) {
         const carouselBlock = getAttributeValue(data, 'carouselBannerBlock');
+        const carouselimagesBlock = getAttributeValue(data, 'carouselimagesBlock');
         const schemesBlock = getAttributeValue(data, 'schemesBlock');
         const downloadAppBlock = getAttributeValue(data, 'downloadAppBlock');
         const schemes = getAttributeValue(data, ['schemes', 'data'])
         result = {
             carouselBlock: carouselBlock?.length > 0 ? genericCMSResponseTransformer(carouselBlock, defaultProps?.carouselBlock) : null,
+            carouselimagesBlock: carouselimagesBlock?.length > 0 ? genericCMSResponseTransformer(carouselimagesBlock, defaultProps?.carouselimagesBlock) : null,
             schemes: (schemes || []).map(scheme => {
                 const obj = get(scheme, 'attributes')
                 return {

@@ -8,6 +8,10 @@ import { transformBanner, transformHeroCMSResponse } from "../transform/hero-ban
 import { transformImageCMSResponse } from "../transform/image";
 import { transformEventsCMSResponse } from "../transform/events"
 import { transformSchemesCMSResponse } from "../transform/schemes"
+import { transformAccountDetailsCMSResponse } from "../transform/account-detaills"
+import { transformRichTextCMSResponse } from "../transform/rich-text"
+import { transformImagesCMSResponse } from "../transform/image"
+import { transformMembersCMSResponse } from "../transform/member"
 
 const componentTransformerMap = {
   "shared.header": {
@@ -45,11 +49,23 @@ const componentTransformerMap = {
   "blocks.schemes": {
     key: "schemes",
     transformer: (data, defaults) => transformSchemesCMSResponse(data ? [data] : [], defaults),
+  },
+  'blocks.account-detaills': {
+    key: 'accountDetails',
+    transformer: (data, defaults) => transformAccountDetailsCMSResponse(data ? [data] : {}, defaults)
+  },
+  'blocks.rich-text': {
+    key: 'richText',
+    transformer: (data, defaults) => transformRichTextCMSResponse(data ? [data] : {}, defaults)
+  },
+  'blocks.images': {
+    key: 'images',
+    transformer: (data, defaults) => transformImagesCMSResponse(data ? [data] : {}, defaults)
+  },
+  "blocks.members": {
+    key: 'members',
+    transformer: (data, defaults) => transformMembersCMSResponse(data ? [data] : {}, defaults)
   }
-  // 'shared.video': {
-  //   key: 'videoBlock',
-  //   transformer: (data, defaults) => trarnsFormVideoCMSResponse(data ? [data] : {}, defaults)
-  // }
 };
 
 const groupItemsByComponent = (block) => {

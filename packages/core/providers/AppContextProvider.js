@@ -6,7 +6,7 @@ import { useCallback, useEffect, useState } from 'react';
 import AppContext from '../contexts/AppContext';
 import AppHeader from '../components/header';
 import AppFooter from '../components/appfooter';
-import { faCalendar, faHandsHelping, faHouse, faInfo, faPerson, faS } from '@fortawesome/free-solid-svg-icons';
+import { faCalendar, faHandsHelping, faHouse, faInfo, faPerson, faS, faSitemap } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -35,7 +35,7 @@ const socialNetworkLinks = {
     links: [       
         
         {
-            href: '',
+            href: 'https://www.facebook.com/profile.php?id=100007680559170&__cft__[0]=AZXEJ4AxWRWv3Rxrr8ZwFWZok-sg8k--Cu1u3LYta3jJP4To3Y2sqROsjo6K6DPW33GjuhbgwDqgoSi9fXdJMPqoQbIz3VL8eTL-YF2YbJkaRfscdPWx-Q2pnp1ClHM0qwE&__tn__=-UC%2CP-R',
             icon: <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9.25995 21.1098C4.67495 20.7198 0.589946 15.7948 0.764946 10.9198C0.969946 5.19977 5.38495 0.884766 11.0349 0.884766C16.4749 0.884766 21.0249 5.18976 21.2349 10.5698C21.4799 16.7648 16.7199 20.6298 12.7449 21.1198C12.7449 18.7548 12.7449 16.3998 12.7449 13.9648C13.4749 13.9648 14.2349 13.9648 15.0599 13.9648C15.2199 13.0048 15.3749 12.1048 15.5349 11.1298C14.5899 11.1298 13.6949 11.1298 12.7199 11.1298C12.6749 10.2198 12.5699 9.36977 12.8249 8.53977C13.0049 7.94477 13.5099 7.72477 14.0899 7.69477C14.5349 7.66976 14.9849 7.68976 15.4749 7.68976C15.4749 6.79476 15.4749 5.96477 15.4749 5.09977C14.1749 4.85477 12.8849 4.67477 11.6049 5.14977C10.2099 5.66477 9.34995 6.96477 9.31495 8.59977C9.29495 9.40977 9.30995 10.2198 9.30995 11.0948C8.43995 11.0948 7.63495 11.0948 6.78995 11.0948C6.78995 12.0498 6.78995 12.9448 6.78995 13.9048C7.60495 13.9048 8.40995 13.9048 9.25995 13.9048C9.25995 16.3298 9.25995 18.6948 9.25995 21.1098Z" fill="currentColor"></path>
             </svg>,
@@ -63,7 +63,7 @@ const headerLinks = [
         href: '/mobile',
         subLinks: [
             {
-                name: 'ಹೋಂ',                
+                name: '',                
                 href: '/',
                 icon: faHouse
             },
@@ -74,7 +74,7 @@ const headerLinks = [
             },
             {
                 name: 'ದೇಣಿಗೆ',
-                href: '/mobile/prepaid',//'/selfcare/plans/mobility/prepaid-plans-home/',
+                href: '/donate',//'/selfcare/plans/mobility/prepaid-plans-home/',
                 icon: faHandsHelping
 
             },
@@ -93,6 +93,11 @@ const headerLinks = [
                 name: 'ಯೋಜನೆಗಳು',
                 href: '/schemes',
                 icon: faS
+            },
+            {
+                name: 'ಕಾರ್ಯಕಾರಿ ಸಮಿತಿ',
+                href: '/committee',
+                icon: faSitemap
             }         
         ]
     },

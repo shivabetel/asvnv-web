@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { Container, ContentBlock, Modal, Space } from "@jds/core";
-import RichText from "../../richtext";
+import RichText from "../../../richtext";
 import { css } from "@emotion/react";
 
 const modalCss = css`
@@ -17,18 +17,12 @@ const EventInfoModal = ({
         <Modal size="s"
             css={modalCss}
             closed={false}
+            header={content?.title}
             onCloseCallback={handleEventClose}
             kind="informational" >
-            <Container
-                as="div">
-                <ContentBlock
-                    title={content?.title}
-                />
-                <Space value="xl"/>
-                <RichText
+            <RichText
                     text={content?.description}
                     style={{ textAlign: 'left' }} />
-            </Container>
         </Modal>
     )
 }

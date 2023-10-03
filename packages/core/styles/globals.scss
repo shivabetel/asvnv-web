@@ -22,20 +22,22 @@ a {
 @import '@szhsin/react-menu/dist/transitions/slide.css';
 @import "~react-image-gallery/styles/scss/image-gallery.scss";
 
-@include createDefaultTheme(['purple', 'sky', 'sky']);
+@include createDefaultTheme(['sky-midnight', 'red', 'green']);
 
 
-@include addExtraTheme('sky-red-green', ['sky', 'red', 'green']);
+@include addExtraTheme('purple-midnight', ['purple-midnight', 'sky', 'sky']); 
 
-@include addExtraTheme('green-mint-orange', [ 'green', 'mint', 'orange' ]);
+@include addExtraTheme('sky-red-green', ['sky-midnight', 'red', 'green']);
 
-@include addExtraTheme('mint-green-orange', [ 'mint', 'green', 'orange' ]);
+@include addExtraTheme('green-mint-orange', [ 'green-midnight', 'mint', 'orange' ]);
+
+@include addExtraTheme('mint-green-orange', [ 'mint-midnight', 'green', 'orange' ]);
 
 @include addExtraTheme('mint-sky-marigoldmidnight', [ 'mint', 'sky', 'marigold-midnight' ]);
 
-@include addExtraTheme('orange-purple-sky', ['orange', 'purple', 'sky']);
+@include addExtraTheme('orange-purple-sky', ['orange-midnight', 'purple', 'sky']);
 
-@include addExtraTheme('pink-violetmidnight-marigoldmidnight', ['pink', 'violet-midnight', 'marigold-midnight']);
+@include addExtraTheme('pink-violetmidnight-marigoldmidnight', ['pink-midnight', 'violet-midnight', 'marigold-midnight']);
 
 @include addExtraTheme('redmidnight-crimsonmidnight-sky', ['red-midnight', 'crimson-midnight', 'sky']);
 
